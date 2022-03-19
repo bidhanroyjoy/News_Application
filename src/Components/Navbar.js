@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../assets/logo1.png";
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
