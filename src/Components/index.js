@@ -1,7 +1,11 @@
 import Navbar from "./Navbar";
-import Homepage from "./Homepage";
+import Home from "./Home";
+import Banner from "./Banner";
+import Footer from "./Footer";
 
 export {
     Navbar,
-    Homepage,
+    Home,
+    Banner,
+    Footer,
 }
