@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <NavContainer>
-        <div className="nav-center">
-            <div className="nav-header">
-            <Link to="/">
-            <img src={logo} alt="Prothm-Alo" />
-          </Link>
-            </div>
-        </div>
-    </NavContainer>
+      <NavContainer>
+    <nav className="navbar navbar-light bg-light">
+    <div className="container">
+      <a className="navbar-brand" href="#">
+        <img src={logo} alt="Prothm-Alo"  width="210" height="55" />
+      </a>
+    </div>
+  </nav>
+  </NavContainer>
   );
 };
 
@@ -25,7 +25,7 @@ const NavContainer = styled.nav`
   justify-content: center;
   background-color:#F5F5F5;
     position: sticky;
-    align-items: center;
+
     top:0;
     z-index: 100;
   
@@ -33,20 +33,28 @@ const NavContainer = styled.nav`
   .nav-center {
     width: 90vw;
     margin: 0 auto;
-    
+    max-width:none;
   }
   .nav-header {
+
     display: flex;
     object-fit: contain;
     cursor:pointer;
+    align-items: center;
+    justify-content: space-between;
     img {
-      width: 175px;
+      width: 210px;
       margin-left: 540px;
     }
   }
  
-  @media (min-width: 576px) {
-   
+  @media (min-width: 992px) {
+    .nav-center {
+      display: grid;
+      ${'' /* width:100%; */}
+      grid-template-columns: auto;
+      align-items: center;
+    }
   
   }
 `;
