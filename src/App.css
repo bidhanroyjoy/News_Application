@@ -377,3 +377,14 @@ width: 70%;
   padding: 20px;
   align-items: center;
 }
+.Poster {
+  width: 100%;
+}
+
+.Poster-img {
+  width: 100%;
+}
+
+.Poster-img img {
+  width: 100%;
+}

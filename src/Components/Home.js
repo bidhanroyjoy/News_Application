@@ -1,6 +1,9 @@
 import React from "react";
-import { Select, Typography, Row, Col, Avatar, Card, Title } from "antd";
+import { Select, Typography, Row, Col, Avatar, Card } from "antd";
+import moment from "moment";
 import { links } from "../utils/Data";
+
+const { Text, Title } = Typography;
 
 const Home = () => {
   return (
